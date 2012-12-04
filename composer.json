@@ -1,0 +1,22 @@
+{
+    "name": "cisco/resolve-target-entity-test-bundle",
+    "type": "symfony-bundle",
+    "description": "Test bundle for resolving target entities in form types",
+    "keywords": ["testing"],
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Moritz Kraft",
+            "email": "mokraft@cisco.com",
+            "homepage": "www.cisco.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": ">=2.1"
+    },
+    "autoload": {
+        "psr-0": { "Cisco\\ResolveTargetEntityTestBundle": "" }
+    },
+    "target-dir": "Cisco/ResolveTargetEntityTestBundle"
+}
+
