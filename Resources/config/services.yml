@@ -1,0 +1,8 @@
+parameters:
+    cisco.formtype.audit.class: Cisco\ResolveTargetEntityTestBundle\Form\Type\AuditType
+
+services:
+    cisco.formtype.audit:
+        class: %cisco.formtype.audit.class%
+        tags:
+            - { name: form.type, alias: audit }

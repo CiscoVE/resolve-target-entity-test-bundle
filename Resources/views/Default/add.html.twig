@@ -1,0 +1,12 @@
+{% extends 'CiscoResolveTargetEntityTestBundle::base.html.twig' %}
+
+{% block body %}
+
+    <form method="POST">
+        {{ form_widget( form ) }}
+        <input type="submit"
+    </form>
+
+    <a href="{{ path( 'audits' ) }}">Back to audit list</a>
+
+{% endblock %}

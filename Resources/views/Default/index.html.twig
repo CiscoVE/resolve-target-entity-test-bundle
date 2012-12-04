@@ -1,0 +1,28 @@
+{% extends 'CiscoResolveTargetEntityTestBundle::base.html.twig' %}
+
+{% block body %}
+
+    <table>
+        <thead>
+            <tr>
+                <th>Target audited</th>
+                <th>Audit comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for audit in audits %}
+                <tr>
+                    <td>{{ audit.target }}</td>
+                    <td>{{ audit.comment }}</td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan="2" style="text-align: center;">No audits exist yet.</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path( 'audit_add' ) }}">Create new audit</a>
+
+{% endblock %}

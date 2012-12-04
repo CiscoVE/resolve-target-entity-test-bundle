@@ -1,0 +1,7 @@
+audits:
+    pattern:  /
+    defaults: { _controller: CiscoResolveTargetEntityTestBundle:Default:index }
+
+audit_add:
+    pattern:  /add
+    defaults: { _controller: CiscoResolveTargetEntityTestBundle:Default:add }
